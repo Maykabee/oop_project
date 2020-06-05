@@ -88,7 +88,7 @@ class Spinner(Button_interface):
 
     def __init__(self, key, function, draw_on):
 
-        Button.__init__(self, key, function, draw_on)
+        Button_interface.__init__(self, key, function, draw_on)
 
         # Цінності, які слід поставити на spinner
         self.text = f'{self.key} {self.current_val}'# рядки покращують читабельність коду, а також працюють швидше ніж інші способи форматування
